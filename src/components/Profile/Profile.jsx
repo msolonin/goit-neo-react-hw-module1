@@ -10,13 +10,13 @@ const Profile = ({
   return (
       <div className={styles.card}>
           <div className={styles.cardHeader}>
-              <img className={styles.cardPoster}
+              <img className={styles.avatar}
                   src={image}
                   alt={tag}
               />
-              <p>{name}</p>
-              <p>@{tag}</p>
-              <p>{location}</p>
+              <p className={styles.userName}>{name}</p>
+              <p className={styles.tag}>@{tag}</p>
+              <p className={styles.tag}>{location}</p>
           </div>
 
           <ul>
